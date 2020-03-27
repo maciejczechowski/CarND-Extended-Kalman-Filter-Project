@@ -27,6 +27,11 @@ class Tools {
    */
   Eigen::MatrixXd CalculateJacobian(const Eigen::VectorXd& x_state);
 
+  double NormalizeAngle(double angle);
+
+  Eigen::VectorXd ConvertPolarToCartesian(const Eigen::VectorXd& v);
+  Eigen::VectorXd ConvertCartesianToPolar(const Eigen::VectorXd& v);
+
 };
 
 #endif  // TOOLS_H_
